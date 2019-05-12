@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+
+$background-color: white;
+$border-button: #f2f2f2;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font: 16px/1.5 "Dosis", sans-serif;
+    /*IE FIX*/
+    /*display: flex;
+  flex-direction: column;*/
+}
+
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    >* {
+        padding: 20px;
+    }
+}
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.page-header {
+    background: $background-color;
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        order: 1;
+        width: 100%;
+        margin-top: 15px;
+
+        li:not(:last-child) {
+            padding-right: 15px;
+        }
+    }
+
+    .cta-contact {
+        font-family: inherit;
+        font-size: 1rem;
+        padding: 5px 18px;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+}
+
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 350px;
+}
+
+.imageContainer,
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    width: 50%;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+}
+
+.button-search:hover,
+.button-lucky:hover {
+    border: 1px solid ;
+    cursor: pointer;
+}
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.page-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    background: $background-color;
+
+    ul {
+        display: flex;
+        font-size: 1rem;
+        margin-bottom: 5px;
+
+        li:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px) {
+    .page-header {
+        ul {
+            width: auto;
+            margin-top: 0;
+        }
+
+        .cta-contact {
+            order: 1;
+        }
+    }
+
+    .page-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .page-main {
+        padding-left: 90px;
+    }
+}
