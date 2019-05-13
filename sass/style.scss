@@ -31,8 +31,7 @@ body {
   flex-direction: column;*/
 }
 
-/* CONTAINER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* CONTAINER */
 
 .wrapper {
     display: flex;
@@ -44,10 +43,9 @@ body {
     }
 }
 
-/* HEADER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* HEADER */
 
-.page-header {
+.pageHeader {
     background: $background-color;
 
     nav {
@@ -77,10 +75,9 @@ body {
     }
 }
 
-/* MAIN
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* MAIN */
 
-.page-main {
+.pageMain {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +91,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 
 .search {
     width: 50%;
@@ -109,10 +107,9 @@ body {
     cursor: pointer;
 }
 
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* FOOTER */
 
-.page-footer {
+.pageFooter {
     display: flex;
     flex-direction: column-reverse;
     background: $background-color;
@@ -128,10 +125,9 @@ body {
     }
 }
 
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Media Queries */
 @media screen and (min-width: 550px) {
-    .page-header {
+    .pageHeader {
         ul {
             width: auto;
             margin-top: 0;
@@ -142,7 +138,7 @@ body {
         }
     }
 
-    .page-footer {
+    .pageFooter {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -158,7 +154,7 @@ body {
         font-size: 18px;
     }
 
-    .page-main {
+    .pageMain {
         padding-left: 90px;
     }
 }
