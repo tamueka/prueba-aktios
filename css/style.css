@@ -67,8 +67,8 @@ flex-direction: column;*/ }
   justify-content: center; }
 
 .search {
-  width: 50%;
-  border-radius: 4px;
+  width: 40%;
+  border-radius: 50px;
   margin: 27px 0;
   outline: none;
   padding: 10px; }
