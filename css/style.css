@@ -69,9 +69,9 @@ flex-direction: column;*/ }
 .search {
   width: 50%;
   border-radius: 4px;
-  margin: 8px 0;
+  margin: 27px 0;
   outline: none;
-  padding: 8px; }
+  padding: 10px; }
 
 .button-search:hover,
 .button-lucky:hover {
