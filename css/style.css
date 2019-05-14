@@ -112,5 +112,7 @@ flex-direction: column;*/ }
 
   .pageMain {
     padding-left: 90px; } }
+.clicked {
+  background-color: red; }
 
 /*# sourceMappingURL=style.css.map */
